@@ -20,7 +20,7 @@ pipeline {
       stage("Deploy") {
           steps {
               echo "Deploying the container"
-              sh "docker run -it -p 8080:8080 myapp"
+              sh "docker run  -p 80:80 myapp"
               
           }
       }
